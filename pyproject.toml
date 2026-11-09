@@ -12,3 +12,15 @@ dependencies = [
     "numpy>=2.5.4",
     "scipy>=1.18.1",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
+
+    [tool.ruff]
+    line-length = 88
+    indent-width = 4
+    
+    [tool.ruff.lint]
+    extend-select = ["A", "COM", "C4", "ICN", "PIE", "SIM", "I", "NPY", "N", "PERF", "D"]
